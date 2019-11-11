@@ -1,0 +1,62 @@
+
+<div fxLayout="row" fxLayoutAlign="space-evenly center" fxFlex="100">
+  <section fxLayout="column" fxFlex="70" fxFlex.lg="70" fxFlex.xl="50" fxFlex.sm="85" fxFlex.xs="90">
+      <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+        
+        <ng-container matColumnDef="codigo">
+          <th mat-header-cell *matHeaderCellDef> Cod. </th>
+          <td mat-cell *matCellDef="let element"> {{element.codigo}} </td>
+        </ng-container>
+        
+        <ng-container matColumnDef="valor">
+          <th mat-header-cell *matHeaderCellDef> Valor </th>
+          <td mat-cell *matCellDef="let element"> {{element.valor | currency}} </td>
+        </ng-container>
+        
+        <ng-container matColumnDef="data">
+          <th mat-header-cell *matHeaderCellDef> Data </th>
+          <td mat-cell *matCellDef="let element"> {{element.data}} </td>
+        </ng-container>
+        
+        <ng-container matColumnDef="porcentagem">
+          <th mat-header-cell *matHeaderCellDef> % Cashback </th>
+          <td mat-cell *matCellDef="let element"> {{element.cashbackPorcentagem}} </td>
+        </ng-container>
+        
+        <ng-container matColumnDef="cashback">
+          <th mat-header-cell *matHeaderCellDef> Valor Cashback </th>
+          <td mat-cell *matCellDef="let element"> {{element.valorCashback}} </td>
+        </ng-container>
+        
+        <ng-container matColumnDef="status">
+          <th mat-header-cell *matHeaderCellDef> Status </th>
+          <td mat-cell *matCellDef="let element"> 
+            <div class="warning" *ngIf="element.status === 'Em Validação'">{{element.status}} </div>
+            <div class="success" *ngIf="element.status === 'Aprovado'">{{element.status}} </div>
+            <div class="danger" *ngIf="element.status === 'Reprovado'">{{element.status}} </div>
+          </td>
+        </ng-container>
+        
+        <ng-container matColumnDef="acoes">
+          <th mat-header-cell *matHeaderCellDef> Ações </th>
+          
+          <td mat-cell *matCellDef="let element"> 
+            <button *ngIf="element.status === 'Em Validação'" class="editar-botao" mat-mini-fab aria-label="Example icon-button with a heart icon">
+              <mat-icon class="icone">edit</mat-icon>
+            </button>
+            <button *ngIf="element.status === 'Em Validação'" class="excluir-botao" mat-mini-fab aria-label="Example icon-button with a heart icon">
+              <mat-icon class="icone">delete_forever</mat-icon>
+            </button>
+          </td>
+        </ng-container>
+        
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+      </table>
+    <div class="back" fxLayout="row" fxFlex="100" fxLayoutAlign="center center" [routerLink]="['/painel']">
+      <mat-icon>keyboard_backspace</mat-icon><span>Voltar para home</span>
+    </div>
+  </section>
+</div>
+
+

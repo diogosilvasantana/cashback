@@ -1,0 +1,24 @@
+
+<div fxLayout="row" fxLayoutAlign="space-evenly center" fxFlex="100">
+  <section fxLayout="column" fxFlex="30" fxFlex.lg="30" fxFlex.xl="30" fxFlex.sm="85" fxFlex.xs="90"> 
+    <mat-card>
+      <form class="form-login" fxLayout="column">
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="Login">
+        </mat-form-field>
+        
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="Senha">
+        </mat-form-field>
+        
+        <div fxLayout="row" fxFlex="100">
+          <mat-checkbox>Lembrar-me</mat-checkbox>
+        </div>
+        
+        <button [routerLink]="['painel']" class="success" mat-flat-button>Acessar</button>
+        
+      </form>
+    </mat-card>
+  </section>
+</div>
+<router-outlet></router-outlet>

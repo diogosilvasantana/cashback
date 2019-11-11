@@ -1,0 +1,71 @@
+table {
+    text-align: center;
+    th{
+        text-align: center!important;
+    }
+}
+
+.actions {
+    color: #000;
+    cursor: pointer;
+}
+
+.editar-botao{
+    margin: 10px 5px!important;
+    padding: 0!important;
+    background: rgb(52, 92, 167);
+
+    .icone {
+        font-size: 20px;
+        width: auto;
+        height: auto;
+        color: #fff;
+    }
+}
+
+.excluir-botao{
+    margin: 10px 5px!important;
+    padding: 0!important;
+    background: rgb(199, 72, 72);
+
+    .icone {
+        font-size: 20px;
+        width: auto;
+        height: auto;
+        color: #fff;
+    }
+}
+
+.check-icone{
+    color: green;
+}
+
+.success {
+    background: green;
+    margin: 0 auto;
+    width: 70px;
+    color: #fff;
+    border-radius: 20px;
+    padding: 5px;
+    font-size: 12px;
+}
+
+.warning {
+    background: rgb(255, 196, 0);
+    margin: 0 auto;
+    width: 80px;
+    color: #fff;
+    border-radius: 20px;
+    padding: 5px;
+    font-size: 12px;
+}
+
+.danger {
+    background: rgb(197, 44, 44);
+    margin: 0 auto;
+    width: 70px;
+    color: #fff;
+    border-radius: 20px;
+    padding: 5px;
+    font-size: 12px;
+}

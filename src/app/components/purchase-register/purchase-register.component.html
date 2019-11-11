@@ -1,0 +1,37 @@
+
+<div fxLayout="row" fxLayoutAlign="space-evenly center" fxFlex="100">
+  <section fxLayout="column" fxFlex="30" fxFlex.lg="30" fxFlex.xl="30" fxFlex.sm="85"> 
+    <mat-card>
+      <mat-card-title>
+        <div fxLayout="row">
+          <mat-icon>add_shopping_cart</mat-icon>
+          <h3>Cadastrar Compra</h3>
+          </div>
+        </mat-card-title>
+        
+        <form [formGroup]="registerPurchase" class="form-login" fxLayout="column" autocomplete="off">
+          
+          <mat-form-field class="input">
+            <input matInput formControlName="codigo" placeholder="Código">
+          </mat-form-field>
+          
+          <mat-form-field class="input">
+            <input currencyMask matInput formControlName="valor" placeholder="Valor" [options]="{ prefix: 'R$ ', thousands: '.', decimal: ',' }">
+          </mat-form-field>
+          
+          <mat-form-field class="input"> 
+            <input matInput formControlName="data" [matDatepicker]="picker" placeholder="Escolha a data">
+            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+          </mat-form-field>
+          
+          <button class="success" mat-flat-button (click)="cadastrarRevendedor()">Cadastrar</button>
+          
+        </form>
+      </mat-card>
+      <div class="back" fxLayout="row" fxFlex="100" fxLayoutAlign="center center" [routerLink]="['/painel']">
+        <mat-icon>keyboard_backspace</mat-icon><span>Voltar para home</span>
+      </div>
+      
+    </section>
+  </div>

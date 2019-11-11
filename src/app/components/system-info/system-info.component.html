@@ -1,0 +1,29 @@
+<div fxLayout="row" fxLayoutAlign="space-evenly center" fxFlex="100">
+  <section fxLayout="column" fxFlex="50" fxFlex.lg="50" fxFlex.xl="30" fxFlex.sm="85"> 
+    <mat-card fxLayout="column" fxLayoutAlign="space-evenly center">
+      <mat-card-title>
+        <div fxLayout="row">
+          <mat-icon>info</mat-icon>
+          <h3>Informações do Sistema</h3>
+        </div>
+      </mat-card-title>
+
+      <div fxFlex="100">
+          <h3>Desenvolvido por:</h3>
+          <span>Diogo da Silva Santana</span>
+      </div>
+      <div fxFlex="100">
+          <h3>E-mail:</h3>
+          <span>diogosilvaoficial@gmail.com</span>
+      </div>
+      <div fxFlex="100">
+          <h3>LinkedIn</h3>
+          <a href="https://www.linkedin.com/in/diogosilvasantana/" target="_blank">https://www.linkedin.com/in/diogosilvasantana/</a>
+      </div>
+    </mat-card>
+    <div class="back" fxLayout="row" fxFlex="100" fxLayoutAlign="center center" [routerLink]="['/painel']">
+      <mat-icon>keyboard_backspace</mat-icon><span>Voltar para home</span>
+    </div>
+    
+  </section>
+</div>

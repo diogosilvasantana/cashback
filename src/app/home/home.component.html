@@ -1,0 +1,46 @@
+<div fxLayout="row" fxLayoutAlign="space-evenly center" fxFlex="100">
+  <section fxLayout="column" fxFlex="70" fxFlex.lg="70" fxFlex.xl="50" fxFlex.sm="85" fxFlex.xs="90">
+    <div class="title" fxLayout="column wrap" fxLayoutAlign="space-evenly center" fxFlex="100">
+      <h1>CASHBACK</h1>
+      <span>Sistema de Benefícios para Revendedor "O Boticário"</span>
+    </div>
+    <div fxLayout="row" fxLayout.lt-md="column wrap" fxLayoutAlign="space-evenly center" fxFlex="100">
+      
+      <mat-card fxFlex="50">
+        <h3>Cashback acumulado até o momento:</h3>
+        <h1>R$ 1.234,58</h1>
+        
+      </mat-card>
+      <mat-card fxFlex="50">
+        <h3>Última Atualização:</h3>
+        <h1>01/11/2019</h1>
+      </mat-card>
+    </div>
+    <div fxLayout="row" fxLayout.lt-md="column" fxLayoutAlign="space-evenly center" fxFlex="100">
+      <h1>Menu de seções:</h1>
+    </div>
+    
+    
+    <div fxLayout="row" fxLayout.lt-md="column" fxLayoutAlign="space-evenly center" fxFlex="100">
+      
+      <mat-card class="link" fxFlex="25" fxFlex.sm="90" [routerLink]="['cadastro-revendedor']">
+        <mat-icon>group_add</mat-icon>
+        <h3>Cadastrar Revendedor</h3>
+      </mat-card>
+      <mat-card class="link" fxFlex="25" fxFlex.lt-md="100" [routerLink]="['cadastrar-compra']">
+        <mat-icon>add_shopping_cart</mat-icon>
+        <h3>Cadastrar Compra</h3>
+      </mat-card>
+      <mat-card class="link" fxFlex="25" fxFlex.lt-md="100" [routerLink]="['listar-compras']"> 
+        <mat-icon>list</mat-icon>
+        <h3>Listar Compras</h3>
+      </mat-card>
+      <mat-card class="link" fxFlex="25" fxFlex.lt-md="100" [routerLink]="['informacoes-do-sistema']">
+        <mat-icon>info</mat-icon>
+        <h3>Informações do Sistema</h3>
+      </mat-card>
+    </div>
+    
+  </section>
+  
+</div>

@@ -1,0 +1,42 @@
+
+<div fxLayout="row" fxLayoutAlign="space-evenly center" fxFlex="100">
+	<section fxLayout="column" fxFlex="50" fxFlex.lg="50" fxFlex.xl="30" fxFlex.sm="85"> 
+		<mat-card>
+			<mat-card-title>
+				<div fxLayout="row">
+					<mat-icon>group_add</mat-icon>
+					<h3>Cadastrar Revendedor</h3>
+				</div>
+			</mat-card-title>
+			
+			<form [formGroup]="registerDealer" class="form-login" fxLayout="column" autocomplete="off">
+				<div fxLayout="row" fxLayout.lt-md="column wrap" fxFlex="100">
+					<mat-form-field class="input" fxFlex="50" fxFlex.lt-md="100">
+						<input matInput formControlName="nome" placeholder="Nome Completo">
+					</mat-form-field>
+					
+					<mat-form-field class="input" fxFlex="50" fxFlex.lt-md="100">
+						<input matInput formControlName="cpf" placeholder="CPF" [textMask]="{mask: cpfMask}">
+					</mat-form-field>
+				</div>
+				
+				<div fxLayout="row" fxLayout.lt-md="column wrap" fxFlex="100">
+					<mat-form-field class="input" fxFlex="50" fxFlex.lt-md="100"> 
+						<input type="email" formControlName="email" matInput placeholder="E-mail">
+					</mat-form-field>
+					
+					<mat-form-field class="input" fxFlex="50" fxFlex.lt-md="100">
+						<input type="password" formControlName="senha" matInput placeholder="Senha">
+					</mat-form-field>
+				</div>
+				
+				<button class="success" mat-flat-button (click)="cadastrarRevendedor()">Cadastrar</button>
+				
+			</form>
+		</mat-card>
+		<div class="back" fxLayout="row" fxFlex="100" fxLayoutAlign="center center" [routerLink]="['/painel']">
+			<mat-icon>keyboard_backspace</mat-icon><span>Voltar para home</span>
+		</div>
+		
+	</section>
+</div>

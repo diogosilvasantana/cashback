@@ -1,0 +1,64 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { background: url("./assets/images/bg.jpg"); background-size: cover; background-repeat: no-repeat;}
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+mat-icon {
+  color: #f47526;
+}
+
+mat-card {
+	margin: 10px;
+	text-align: center;
+	box-shadow: none!important;
+	border: 1px solid #e6e6e6;
+}
+
+.back {
+  margin: 30px 0;
+  cursor: pointer;
+  mat-icon {
+    color: #f47526;
+  }
+}
+
+button {
+  padding: 10px!important;
+  margin: 20px 0!important;
+
+
+  &.success{
+    color: #fff;
+    background: #a5ce38;
+
+    &.margin {
+      margin: 0 5px!important;
+    }
+    
+  }    
+  &.danger{
+    color: #fff;
+    background: #9c0000;
+
+    &.margin {
+      margin: 0 5px!important;
+    }
+    
+  }  
+  &.edit{
+    color: #fff;
+    background: #325b99;
+
+    &.margin {
+      margin: 0 5px!important;
+    }
+    
+  }  
+}
+
+@font-face {
+  font-family: 'Quicksand';
+  src: url('./assets/fonts/quicksand.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
