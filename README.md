@@ -23,8 +23,8 @@ Após executar o projeto, acessar no seu navegador de internet o link `http://lo
 3. Os links estão todos configurados através de rotas no app.routing.module.ts
 
 ## Informações do Desenvolvedor
-Desenvolvido por: Diogo da Silva Santana.
-Cidade: São Paulo - SP.
-LinkedIn: https://linkedin.com/in/diogosilvasantana.
-E-mail: diogosilvaoficial@gmail.com.
-Whatsapp: (11)94273-7923.
+- Desenvolvido por: Diogo da Silva Santana.
+- Cidade: São Paulo - SP.
+- LinkedIn: https://linkedin.com/in/diogosilvasantana.
+- E-mail: diogosilvaoficial@gmail.com.
+- Whatsapp: (11)94273-7923.
