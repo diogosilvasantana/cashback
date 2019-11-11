@@ -1,27 +1,30 @@
-# Boticario
+# Cashback Boticário
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.17.
+Este projeto foi desenvolvido em Angular 8, com Material UI e SASS
 
-## Development server
+## Instalação
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+*Requisitos: Nodejs, Angular CLI
 
-## Code scaffolding
+Dentro da pasta do projeto, execute `npm install` para instalar a aplicação e suas dependências.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Executando o Projeto
 
-## Build
+Após a instalação, executar com `ng serve` ou apenas `ng s`
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## Acessando o Projeto
 
-## Running unit tests
+Após executar o projeto, acessar no seu navegador de internet o link `http://localhost:4200/`
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Observações
 
-## Running end-to-end tests
+1. O projeto foi desenvolvido com o Foco em Front-end, uma vez que não foi disponibilizada uma API.
+2. No cadastro de Revendedores e Compras, os dados inseridos no formulário podem ser vistos no console do navegador em inspecionar elemento, pois no envio inseri um console.log
+3. Os links estão todos configurados através de rotas no app.routing.module.ts
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## Informações do Desenvolvedor
+Desenvolvido por: Diogo da Silva Santana
+Cidade: São Paulo - SP
+LinkedIn: https://linkedin.com/in/diogosilvasantana
+E-mail: diogosilvaoficial@gmail.com
+Whatsapp: (11)94273-7923
